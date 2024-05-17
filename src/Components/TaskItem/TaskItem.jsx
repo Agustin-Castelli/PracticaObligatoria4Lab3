@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const TaskItem = ({ id, content, onDelete }) => {
 
-    const [markTask, setMarkTask] = useState("");
+    const [markTask, setMarkTask] = useState(false);
 
     const clickHandler = () => {
         setMarkTask(!markTask);
